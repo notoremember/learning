@@ -6,34 +6,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя страница</title>
-    <style>
-    .footer{
-        text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
     <body>
 <header>
     <nav>
         <ul>
-            <li><a href ="#main">Главная страница</a></li>
             <li><a href="#contacts"> Контакты для связи</a></li>
+            <li><a href ="#main">Главная страница</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-       
-        <h1 id="main">Портфолио</h1>
+    <section>  
+        <h1>Портфолио</h1>
+        <h4>Мои цели:</h4>
         <ol>
             <li>
-                <h3><strong>Стать №1 в веб-разработке </strong></h3>
+                <h3><strong>Стать №1 в веб-разработке.</strong></h3>
                 <img src="/img/number_1.png" alt="number-1 img" width="70" height="55">
             
             </li>
             
             <li>
-                <h3><strong>Выстроить свою торговую стратегию и стать лучшим в торговле</strong></h3>
+                <h3><strong>Выстроить свою торговую стратегию и стать лучшим в торговле.</strong></h3>
                 <img src="/img/trading.png" alt="btc/usdt" width="200" height="140">
             
             </li>
@@ -44,9 +41,41 @@
             </li>
 
         </ol>
-
-
-        <h4>Контакты для связи</h4>
+    </section>
+    
+    <section>
+        <h2 id="contacts">Контакты для связи</h2>
+        
+        <h4>Моё фото:</h4>
+        <img src="/img/i .jpg" alt="my photo" width="200" height="200" >
+        
+        <br>
+        
+        <h4>Форма для обратной связи</h4>
+        <form>
+            <label>
+                ФИО:
+                <input type="text" placeholder="Первый Миллионер" name="name&surname">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email" placeholder="example@gmail.com" name="email">
+            </label>
+            <br>
+            <label>
+                Phone number:
+                <input type="tel" placeholder="+7-(XXX)-XXX-XX-XX" name="phone">
+            </label>
+            <br>
+            
+            <button type="submit" name="submit">Отправить данные</button>
+            <button type="reset" name="reset">Сбросить</button>
+            
+            <p>Avatar:</p>
+            <img src="/img/evilcorp.png" alt="avatar" width="130" height="130">
+            
+        </form>
         
         <ul>
             <li>Phone number: +7 (123) 456 78 90</li>
@@ -54,13 +83,13 @@
             <li>Gmail adress: ryazapovdanii@gmail.com</li>
             <LI>Live adress: Norway , Oslo , Some-Street , 3/4</LI>
         </ul>
-            
-        <img src="/img/i .jpg" alt="my photo" width="200" height="200" >
+
+        <h1 id="main">Главная страница</h1>
         
-        <h1>О Разработчике</h1>
+        <h2>О Разработчике</h2>
         <li>Даниил 15 лет , проектирую и разрабатываю сайты</li>
         <li>Изучаю и торгую на блокчейне</li>
-        <br>
+        
 
         <p>Моя любимая песня</p>
         
@@ -68,15 +97,14 @@
         
         <br>
         
-        
-        <h3 id="contacts">Мои социальные сети</h3>
+        <h3>Мои социальные сети:</h3>
         <ol>
             <li>
                 <a href ="https://github.com/notoremember">
                     <img src="/img/github-mark.png" alt="github" width="35" height="35">
                 </a>
             </li>
-            
+
             <li>
                 <a href ="https://t.me/fs0cie1y">
                     <img src="/img/telegram.png" alt="telegram" width="35" height="35">
@@ -85,8 +113,12 @@
             
             <li><img src="/img/ton.webp" alt="ton" width="35" height="35"><strong>
                 UQCm9AnZU20Y1q_n0RJJ0rkt4PC_ouzn2lLVL_qx4Dn-2XaR</strong></li>
+                
+            <li><img src="/img/tether.png" alt="usdt" width="35" height="35"><strong>
+                0x23e86d68609a341fa44224520a6330e4dc42d7b2
+            </strong></li>
         </ol>
-
+    </section>
 </main>
     
 <footer>
