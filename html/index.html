@@ -1,32 +1,37 @@
-<!-- Дз 2 -->
+<!-- Дз  -->
 
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя страница</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-    <body>
+
+<body>
+
 <header>
     <nav>
         <ul>
-            <li><a href="#contacts"> Контакты для связи</a></li>
-            <li><a href ="#main">Главная страница</a></li>
+            <li><a href="#contacts"><span>Контакты для связи</span></a></li>
+            <li><a href ="#main"><span>Главная страница</span></a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section>  
+
+<section>
+    
+    <div class="portfolio">  
         <h1>Портфолио</h1>
         <h4>Мои цели:</h4>
         <ol>
             <li>
                 <h3><strong>Стать №1 в веб-разработке.</strong></h3>
                 <img src="/img/number_1.png" alt="number-1 img" width="70" height="55">
-            
             </li>
             
             <li>
@@ -36,20 +41,26 @@
             </li>
             
             <li>
-                <h3><strong>Эту машину ----></strong></h3>
+                <h3><strong>Эту машину </strong></h3>
                 <img src="/img/bmw.png" alt="bmw" width="200" height="200">
             </li>
 
         </ol>
+    </div>
     </section>
     
     <section>
-        <h2 id="contacts">Контакты для связи</h2>
+        <div id="contacts">
+        <h2>Контакты для связи</h2>
         
         <h4>Моё фото:</h4>
         <img src="/img/i .jpg" alt="my photo" width="200" height="200" >
         
         <br>
+        <br>
+        <span>Avatar:</span>
+        <br>
+        <img src="/img/evilcorp.png" alt="avatar" width="150" height="145">
         
         <h4>Форма для обратной связи</h4>
         <form>
@@ -59,21 +70,19 @@
             </label>
             <br>
             <label>
-                Email:
+                email:
                 <input type="email" placeholder="example@gmail.com" name="email">
             </label>
             <br>
             <label>
-                Phone number:
+                Phone number
                 <input type="tel" placeholder="+7-(XXX)-XXX-XX-XX" name="phone">
             </label>
             <br>
             
             <button type="submit" name="submit">Отправить данные</button>
             <button type="reset" name="reset">Сбросить</button>
-            
-            <p>Avatar:</p>
-            <img src="/img/evilcorp.png" alt="avatar" width="130" height="130">
+            <br>
             
         </form>
         
@@ -83,8 +92,10 @@
             <li>Gmail adress: ryazapovdanii@gmail.com</li>
             <LI>Live adress: Norway , Oslo , Some-Street , 3/4</LI>
         </ul>
-
-        <h1 id="main">Главная страница</h1>
+        </div>
+        
+        <div id="main">
+        <h1>Главная страница</h1>
         
         <h2>О Разработчике</h2>
         <li>Даниил 15 лет , проектирую и разрабатываю сайты</li>
@@ -118,12 +129,16 @@
                 0x23e86d68609a341fa44224520a6330e4dc42d7b2
             </strong></li>
         </ol>
+        </div>
     </section>
 </main>
     
 <footer>
-        <div class="footer">
-            <img src="/img/ethereum.png" alt="eth" width="320" height="300">
+        <div id="footer">
+            <br>
+            <br>
+            <br>
+            <img src="/img/ethereum.png" alt="eth" width="266" height="234">
             <p>© Все права защищены</p>
         </div>
 </footer>
